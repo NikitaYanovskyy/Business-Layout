@@ -1,0 +1,115 @@
+$mainColor: #21C87A;
+$hoverColor: rgb(8, 105, 60);
+@font-face{
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+*::before,*::after,*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    border: none;
+    font-family: Poppins;
+}
+.side-margin{
+    margin: 0 5vw !important;
+}
+
+@import './scss/landing';
+@import './scss/mobile-menu';
+@import './scss/mobile-main-popup';
+
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+    .mobile-navigation{
+        display: flex;
+    }
+    .landing-content{
+        padding-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        .landing-text{
+            width: 100%;
+            margin: 30px 0;
+            h1{
+                width: 100%;
+            }
+        }
+        .landing-form{
+            width: 100%;
+            padding: 0;
+            .landing-form-wrapper{
+                margin: 40px 30px;
+            }
+        }
+        button{
+            transition: background-color 0.3s ease-out;
+            cursor: pointer;
+           background-color: $mainColor;
+           color: #fff;
+           padding: 13px 53px !important;
+           &:hover{
+            background-color: $hoverColor;
+           }
+        }
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-right: none;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        padding: 15px 20px;
+        .logo-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            h3{
+                color: #fff;
+            }
+        }
+        h1{
+            color: #000;
+            margin-left: 5px;
+            font-size: 30px;
+        }
+    }
+    ///////////////////////////////////////////Movile Nav
+    .side-open{
+        margin-right: 0 !important;
+    }
+    .navigation-btn{
+        margin: 20px 0;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .mobile-menu{
+        h4{
+            display: none;
+        }
+    }
+    .logo{
+        h1{
+            display: none;
+        }
+    }
+    .mobile-pages-column{
+        flex-direction: column;
+        margin-top: 0;
+        .mobile-column{
+            margin: 20px 0;
+        }
+    }
+}
