@@ -1,5 +1,6 @@
 $mainColor: #21C87A;
 $hoverColor: rgb(8, 105, 60);
+$grayColor: #646f79;
 @font-face{
     font-family: Poppins;
     src: url('../fonts/Poppins-Regular.ttf');
@@ -13,13 +14,30 @@ $hoverColor: rgb(8, 105, 60);
     border: none;
     font-family: Poppins;
 }
+.Typewriter__wrapper , .Typewriter__cursor{
+    color: #fff;
+}
 .side-margin{
     margin: 0 5vw !important;
+}
+.header-span{
+    font-size: 13px;
+    color: rgb(69, 69, 250);
+    background-color: rgba(121, 110, 255, 0.1);
+    border-radius: 6rem;
+    padding: 10px;
 }
 
 @import './scss/landing';
 @import './scss/mobile-menu';
 @import './scss/mobile-main-popup';
+@import './scss/sponsors';
+@import './scss/3-methods';
+@import './scss/about-carousel';
+@import './scss/cards';
+@import './scss/reviews';
+@import './scss/get-started';
+@import './scss/footer';
 
 @media screen and (max-width: 768px){
     nav{
@@ -91,9 +109,82 @@ $hoverColor: rgb(8, 105, 60);
     .navigation-btn{
         margin: 20px 0;
     }
-    
+    ////////////////////////////////////////Sponsors
+    .sponsors-wrapper{
+        padding: 30px 50px;
+    }
+    ///////////////////////////////////////////////////////////////////Methods
+    .methods-container{
+        .methods-switch-block-wrapper{
+            flex: 5%;
+            .methods-switch-block{
+                width: 200px;
+                padding-left: 0;
+                margin-right: 30px;
+                h2{
+                    width: 190px;
+                }
+            }   
+        }
+    }
+    ///////////////////////////////////////////////Method blocks 1,3
+    .switch-block-column{
+        justify-content: space-between;
+        .switch-block-element{
+            margin-right: 15px;
+        }
+    }
+    /////////////////////////////////////////////////Method block 2
+    .key-benefits{
+        flex-direction: column;
+        .key-image{
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .key-text{
+            margin-left: 0;
+        }
+    }
+    /////////////////////////////////////////////////////////////////////////Cards
+    .cards-wrapper{
+        flex-direction: column;
+        .card{
+            margin-bottom: 20px;
+            width: 85%;
+        }
+        .card:nth-of-type(2){
+            width: 85%;
+            height: 340px;
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////Reviews
+    .reviews{
+        padding: 100px 0 50px 0;
+        .reviews-line{
+            top: 50px;
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////Get Started
+    .get-started-wrapper{
+        .get-started{
+            flex-direction: column;
+            .get-started-content{
+                text-align: center;
+                width: 100%;
+            }
+            .get-started-buttons{
+                width: 100%;
+                text-align: center;
+                a{
+                    margin-top: 20px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////Mobile
 @media screen and (max-width: 425px){
     .mobile-menu{
         h4{
@@ -110,6 +201,71 @@ $hoverColor: rgb(8, 105, 60);
         margin-top: 0;
         .mobile-column{
             margin: 20px 0;
+        }
+    }
+    ////////////////////////////////////////Sponsors
+    .sponsors-wrapper{
+        padding: 30px 20px;
+    }
+    ///////////////////////////////////////////////////////////////////Methods
+    .methods-container{
+        flex-direction: column;
+        padding-top: 20px;
+        .methods-switch-block-wrapper{
+            .methods-switch-block{
+                width: 100%;
+                padding-left: 0;
+                margin-right: 30px;
+                box-shadow: none !important;
+                h2{
+                    width: 100%;
+                }
+                .methods-switch-side-line{
+                    display: none;
+                }
+                p{
+                    border: none !important;
+                }
+            }   
+        }
+    }
+    ///////////////////////////////////////////////Method blocks 1,3
+    .switch-block-column{
+        flex-direction: column;
+        margin-bottom: 0;
+        .switch-block-element{
+            margin-right: 0;
+            margin: 20px 0;
+        }
+    }
+    /////////////////////////////////////////////////Method block 2
+    .key-benefits{
+        flex-direction: column;
+        .key-image{
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .key-text{
+            margin-left: 0;
+        }
+    }
+    /////////////////////////////////////////////////Reviews
+    .reviews{
+        flex-direction: column;;;;
+        .reviews-line{
+            width: 50%;
+        }
+        .review-block{
+            text-align: center;
+            width: 100%;;;;
+            margin: 30px 0;;;;
+        }
+    }
+     ////////////////////////////////////////////////////////////////////////////Get Started
+     .get-started-wrapper{
+        a:nth-of-type(1){
+        margin-right: 0 !important;            
         }
     }
 }

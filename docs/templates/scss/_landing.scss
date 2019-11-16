@@ -1,5 +1,5 @@
 .landing{
-    background-image: url('../../images/landing-background.jpg');
+    background-image: url('../images/landing-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -8,7 +8,7 @@
     transition: opacity 0.4s ease-in-out, right 0.4s ease-in-out;
     height: 100vh;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 300px;
     right: -300px;
     opacity: 0;
@@ -146,7 +146,7 @@ nav{
 .landing-content{
     display: flex;
     align-items: center;
-    padding: 40px 0;
+    padding: 120px 0 40px 0;
     .landing-text{
         color: #fff;
         flex:1;
@@ -292,6 +292,7 @@ nav{
 }
 ////////////////////////////////////////Pages
 .pages-dropdown{
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
     cursor: default;
     transition: all 0.3s ease-in-out;
     position: absolute;

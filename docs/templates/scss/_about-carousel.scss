@@ -1,0 +1,35 @@
+.about-carousel-wrapper{
+    background-color: #F5F8FB;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.about-carousel{
+    text-align: center;
+    h1{
+        margin: 20px 0;
+    }
+    p{
+        color: $grayColor;
+    }
+}
+#About-carousel{
+    margin-top: 50px;
+    .carousel-item{
+        width: 100%;
+        height: 300px;
+        background-color: #000;
+        background-size: cover;
+        background-position: center;
+    }
+    .about-item1{
+        background-image: url(../images/carousel-image-1.jpg);
+    }
+    .about-item2{
+        background-image: url(../images/carousel-image-2.jpg);
+    }
+    .about-item3{
+        background-image: url(../images/carousel-image-3.jpg);
+    }
+}
+
+

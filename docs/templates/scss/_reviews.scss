@@ -1,0 +1,29 @@
+.reviews{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 200px 0 50px 0;
+    .reviews-line{
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%,0);
+        height: 1px;
+        width: 30%;
+        background-color: #e3e6f0;
+    }
+    .review-block{
+        text-align: center;
+        width: 40%;
+        margin: 50px 0;
+        img{
+            border-radius: 50%;
+        }
+        h4{
+            margin: 10px 0;
+        }
+        p{
+            color: $grayColor;
+        }
+    }
+}

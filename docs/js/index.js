@@ -1,4 +1,14 @@
 $(document).ready(()=>{
+///////////////////////////////////TypeWriter
+var typeBlock = document.querySelector('.landing-text h1');
+var typeWriter = new Typewriter(typeBlock, {
+    loop: true
+})
+
+typeWriter.typeString('Space service that moves work forward')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
 ////////Side Menu
 $('.side-open').click(()=>{
     $('.side-navigation').css({

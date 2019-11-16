@@ -1,0 +1,98 @@
+.methods-container{
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+    .methods-switch-block-wrapper{
+        flex: 30%;
+        .methods-switch-block{
+            position: relative;
+            margin-right: 50px;
+            padding: 30px 0 30px 30px;
+            box-shadow: 26px 0 26px -12px rgba(100, 111, 121, 0.06);
+            h2{
+                width: 250px;
+                font-weight: normal;
+                margin-bottom: 20px;
+            }
+            p{
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+                padding: 10px 0;
+                color: $grayColor;
+            }
+            p:first-of-type{
+                color: $mainColor;
+                border-right: 5px solid $mainColor;
+            }
+            .methods-switch-side-line{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 5px;
+                background-color: rgba(100, 111, 121, 0.09);;
+            }
+        }   
+    }
+    .methods-switching-blocks-wrapper{
+        a{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            color: $mainColor;
+            font-weight: bold;
+            width: fit-content;
+            img{
+                margin-left: 10px;
+                margin-top: 1px;
+            }
+        }
+        .methods-icon{
+            height: 54px;
+            width: 54px;
+        }
+        position: relative;
+        flex: 60%;
+        .switch-block{
+            display: none;
+            transition: opacity 0.2s ease-in-out;
+            position: relative;
+            opacity: 0;
+            z-index: -1;
+        }
+        .switch-block:first-of-type{
+            display: block;
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+}
+///////////////////////////////////////////////Method blocks 1,3
+.switch-block-column{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: $grayColor;
+    }
+    .switch-block-element{
+        margin-right: 40px;
+    }
+}
+/////////////////////////////////////////////////Method block 2
+.key-benefits{
+    display: flex;
+    align-items: center;
+    .key-image{
+        display: block;
+        height: 60%;
+        width: 45%;
+    }
+    .key-text{
+        margin-left: 50px;
+        h2 , p{
+            margin-top: 20px;
+        }
+    }
+}

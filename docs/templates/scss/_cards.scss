@@ -1,0 +1,96 @@
+.cards{
+    text-align: center;
+    padding-top: 100px;
+    h1{
+        margin: 20px 0;
+    }
+    p{
+        color: $grayColor;
+    }
+}
+.cards-wrapper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card{
+        padding: 20px;
+        width: 27%;
+        height: 370px;
+        text-align: left;
+        border: 1px solid #E3E6F0;
+        h1{
+            font-size: 38px;
+            font-weight: normal;
+            span{
+                font-size: 28px;
+                color: #fff;
+            }
+        }
+        h4{
+            color: $grayColor;
+        }
+        a{
+            transition: background-color 0.3s ease-in-out;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            margin-top: 20px !important;
+            color: #fff;
+            background-color: #796EFF;
+            border-radius: 4px;
+            &:hover{
+                background-color: rgb(100, 86, 252);
+            }
+        }
+        .card-list-item{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 16px;
+                color: #000;
+                margin: 10px 0;
+            }
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                //fill: #fff;
+            }
+            .card-correct{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                mask-image: url(../icons/correct.svg);
+            }
+            .card-correct-blue{
+                background-color: rgb(105, 103, 122);
+            }
+            .card-correct-white{
+                background-color: #fff;
+            }
+        }
+    }
+    .card:nth-of-type(2){
+        transition: background-color 0.3s ease-in-out;
+        background-color: $mainColor;
+        width: 25%;
+        padding: 50px 20px;
+        h4{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+        h1{
+            color: #fff;
+        }
+        a{
+            background-color: #fff;
+            color: #000;
+            &:hover{
+                background-color: rgb(221, 221, 221);
+            }
+        }
+    }
+}
