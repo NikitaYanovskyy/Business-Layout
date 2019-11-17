@@ -194,6 +194,10 @@ $grayColor: #646f79;
         order: 2;
     }
     }
+    ///////////////////////////////////////////////////////////////////////////////Language Block
+    .language-block{
+        top: 20px !important;
+    }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////Mobile
 @media screen and (max-width: 425px){
@@ -311,6 +315,19 @@ $grayColor: #646f79;
             }
             grid-column: 3/5;
             grid-row: 2/3;
+        }
+    }
+    ///////////////////////////////////////////////////////////////////////////////Language Block
+    .language-block{
+        top: 200px !important;
+        h4{
+            padding: 40px 20px 20px 20px!important;
+        }
+        ul{
+            padding: 20px 40px!important;
+        }
+        .more-languages{
+            padding: 40px 40px 20px 20px !important;
         }
     }
 }

@@ -2,9 +2,54 @@
     background-color: #151B26;
 }
 footer{
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
+            //////////////////////////////Absolute Language Block
+        .language-block{
+            position: absolute;
+            display: none;
+            top: -240px;
+            background-color: #fff;
+            border-radius: 7px;
+            h4{
+                padding: 40px 40px 20px 40px;
+            }
+            ul{
+                column-count: 2;
+                padding: 20px 40px;
+            }
+            li{
+                cursor: pointer;
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: $grayColor;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 10px;
+                    width: 16px;
+                    height: 12px;
+                    transform: rotate(0deg);
+                }
+            }
+            .more-languages{
+                border-radius: 7px;
+                display: block;
+                padding: 40px 100px 20px 40px;
+                background-color: #f5f8fb !important;
+                display: flex;
+                flex-direction: column;
+                small{
+                margin: 5px 0;
+                display: block;
+                }
+                small:last-of-type{
+                    color: $mainColor;
+                }
+            }
+        }
 }
     .footer-logo-icon{
         display: flex;
@@ -34,10 +79,17 @@ footer{
         width: fit-content;
         p{
             color: #646f79;
-        }img{
+        }
+        p::selection{
+            background: transparent;
+        }
+        img{
             margin-left: 10px;
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         } 
+        img::selection{
+            background: transparent;
+        }
         &:hover{
             border-color: #fff;
             p{

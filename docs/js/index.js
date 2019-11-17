@@ -136,5 +136,38 @@ $('.pages').click(()=>{
         mainClickCheck[1] = false;
     } 
 })
-
+////////////////////////////////////////////////////////////////Footer Language Changer
+var footerChangerClicked = false;
+$('.language-changer').click(()=>{
+    if(footerChangerClicked == false){
+        $('.language-changer img').css({
+            'transform': 'rotate(90deg)'
+        })
+        $('.language-changer').css({
+            'border-color': '#fff'
+        })
+        $('.language-changer p').css({
+            'color': '#fff'
+        })
+        $('.language-block').css({
+            'display': 'block'
+        })
+        footerChangerClicked = true;
+    }
+    else{
+        $('.language-changer img').css({
+            'transform': 'rotate(-90deg)'
+        })
+        $('.language-changer').css({
+            'border-color': '#646f79'
+        })
+        $('.language-changer p').css({
+            'color': '#646f79'
+        })
+        $('.language-block').css({
+            'display': 'none'
+        })
+        footerChangerClicked = false;
+    }
+})
 })

@@ -1135,6 +1135,7 @@ nav {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,6 +1143,68 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 60px 0;
+}
+
+footer .language-block {
+  position: absolute;
+  display: none;
+  top: -240px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+footer .language-block h4 {
+  padding: 40px 40px 20px 40px;
+}
+
+footer .language-block ul {
+  -webkit-column-count: 2;
+          column-count: 2;
+  padding: 20px 40px;
+}
+
+footer .language-block li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #646f79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .language-block li img {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+footer .language-block .more-languages {
+  border-radius: 7px;
+  display: block;
+  padding: 40px 100px 20px 40px;
+  background-color: #f5f8fb !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .language-block .more-languages small {
+  margin: 5px 0;
+  display: block;
+}
+
+footer .language-block .more-languages small:last-of-type {
+  color: #21C87A;
 }
 
 .footer-logo-icon {
@@ -1192,10 +1255,26 @@ footer {
   color: #646f79;
 }
 
+.language-copyright .language-changer p::-moz-selection {
+  background: transparent;
+}
+
+.language-copyright .language-changer p::selection {
+  background: transparent;
+}
+
 .language-copyright .language-changer img {
   margin-left: 10px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.language-copyright .language-changer img::-moz-selection {
+  background: transparent;
+}
+
+.language-copyright .language-changer img::selection {
+  background: transparent;
 }
 
 .language-copyright .language-changer:hover {
@@ -1469,6 +1548,9 @@ footer {
         -ms-flex-order: 2;
             order: 2;
   }
+  .language-block {
+    top: 20px !important;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1610,6 +1692,18 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .language-block {
+    top: 200px !important;
+  }
+  .language-block h4 {
+    padding: 40px 20px 20px 20px !important;
+  }
+  .language-block ul {
+    padding: 20px 40px !important;
+  }
+  .language-block .more-languages {
+    padding: 40px 40px 20px 20px !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
